@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .container{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bom dia</h1>
+        <div class="numero1" >
+            <h2>digite um numero:</h2>
+            <input type="number" id="num1" >
+        </div>
+        <div class="numero2">
+            <h3>digite outro numero:</h3>
+            <input type="numer" id="num2">
+        </div>
+        <br>
+        <button onclick="clicar()">Somar</button>
+        <button onclick=""></button>
+        <br><br><br>
+        <div class="resultado">
+            <h1></h1>
+        </div>
+    </div>
+    <script>
+        function clicar() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            let resultado = parseInt(num1) + parseInt(num2);
+        document.querySelector(".resultado").innerHTML = resultado;   
+        }
+        
+
+
+
+
+    </script>
+</body>
+</html>
